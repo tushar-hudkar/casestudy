@@ -1,0 +1,87 @@
+.profileContainer{
+	@extend %leftfull;
+	padding: 0px;
+	background-color: $white;
+	@include box-sizing(boxsizing);
+
+	.profile{
+		@extend %left;
+		padding-top: 32px;
+		@include box-sizing(boxsizing);
+		
+		.profileFrame{
+			@extend %left;
+            height: 102px;
+            width: 102px;
+            @include border-radius(50%);
+            @extend %overflow;	
+
+            img{
+				max-width: 100%;
+			}   	
+		}
+	
+	p.profileName{
+		@extend %leftfull;
+		margin-top: 24px;
+		font-size: 0.9375rem;
+		font-family: 'ralewaysemibold';
+		color: $black;
+		line-height: 1.7rem;
+		letter-spacing: 1px;
+		text-transform: capitalize;
+
+		.namePro{
+			@extend %left;
+			font-size: 0.875rem;
+			font-family: 'ralewayregular';
+		}
+	}
+	}
+	
+	.profileTextDescription{
+		@extend %right;
+		@include box-sizing(boxsizing);
+	p.profileText{
+		@extend %left;
+		margin-top: 12px;
+		font-size: 0.9375rem;
+		color: $black;
+		line-height: 1.7rem;
+		font-family: 'ralewayregular';
+		
+	}
+	}
+}
+
+@media screen and (max-width: 640px){
+	.profileContainer{
+
+	.profile{
+		padding-top: 10px;
+		
+		.profileFrame{
+            height: 58px;
+            width: 58px;	
+
+            img{
+			}   	
+		}
+	
+	p.profileName{
+		line-height: 1.3rem;
+		    margin-bottom: 10px;
+
+		.namePro{
+		}
+	}
+	}
+	
+	.profileTextDescription{
+	p.profileText{
+		margin-top: 6px;
+		
+	}
+	}
+}
+}

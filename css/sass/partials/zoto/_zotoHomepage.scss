@@ -1,0 +1,78 @@
+.zotoHomepage{
+	@extend %leftfull;
+	margin-top: 30px;
+
+	.zotoHomepageScreen{
+		@extend %left;
+		padding-top: 38px;
+
+		img{
+			@extend %left;
+			max-width: 100%;
+			width: 300px;
+		}
+	}
+
+	.zotoHomepageDescription{
+		@extend %right;
+		@include box-sizing(boxsizing);
+		padding-top: 138px;
+
+		p.zotoScreenHeading{
+			@extend %leftfull;
+			font-size: 0.9375rem;
+			line-height: 1.75rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-family: 'ralewayregular';
+			font-weight: normal;
+			text-transform: capitalize;
+
+		}
+
+		ul.zotoHomepagePoint{
+			@extend %leftfull;
+			@include box-sizing(boxsizing);
+			padding-left: 16px;
+			margin-top: 12px;
+
+			li{
+				@extend %leftfull;
+				padding-left: 14px;
+				margin-top: 12px;
+				font-size: 0.9375rem;
+				color: $black;
+				line-height: 1.75rem;
+				font-family: 'ralewayregular';
+			}
+		}
+
+		.zotoDescription{
+			@extend %leftfull;
+			@include box-sizing(boxsizing);
+			padding-right: 62px;
+			p.zotoText{
+				@extend %left;
+				margin-top: 12px;
+				font-size: 0.9375rem;
+				color: $black;
+				line-height: 1.625rem;
+				font-family: 'ralewayregular';
+			}
+		}
+	}
+}
+
+.borderLight{
+	@extend %leftfull;
+	border-top: 1px solid #ebebeb;
+	margin: 58px 0 38px 0; 
+}
+
+@media screen and (max-width: 640px){
+	.zotoHomepage{
+		display: none;
+	}	
+	.borderLight{
+		display: none;
+	}
+}

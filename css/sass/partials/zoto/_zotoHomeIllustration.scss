@@ -1,0 +1,88 @@
+.zotoHomeIllustration{
+	@extend %leftfull;
+	margin-top: 30px;
+	@include box-sizing(boxsizing);
+
+	.zotoHomepageDescription{
+		@extend %left;
+		@include box-sizing(boxsizing);
+		padding-top: 220px;
+		padding-left: 198px;
+
+		p.zotoScreenHeading{
+			@extend %leftfull;
+			@include box-sizing(boxsizing);
+			text-align: left;
+			font-size: 0.9375rem;
+			line-height: 1.75rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-family: 'ralewayregular';
+			font-weight: normal;
+			text-transform: capitalize;
+
+			.user{
+			font-size: 1.125rem;
+			color: $black;
+    	}
+
+		}
+		p.zotoText{
+				@extend %left;
+				margin-top: 12px;
+				font-size: 0.9375rem;
+				color: $black;
+				line-height: 1.625rem;
+				font-family: 'ralewayregular';
+			}
+	}
+	.zotoPayViaScreen{
+		@extend %left;
+		padding-top: 38px;
+
+		p.chooseBank{
+			@extend %right;
+			width: 100%;
+			@include box-sizing(boxsizing);
+			text-align: right;
+    		padding-right: 46px;
+    		margin-bottom: 18px;
+			font-size: 0.9375rem;
+			line-height: 1.625rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-family: 'ralewayregular';
+		}
+
+		img{
+			@extend %right;
+			max-width: 100%;
+			width: 300px;
+		}
+	}
+}
+
+@media screen and (max-width: 640px){
+	.zotoHomeIllustration{
+
+	.zotoHomepageDescription{
+		padding: 38px 0 0 0;
+
+		p.zotoScreenHeading{
+
+			.user{
+    	}
+
+		}
+		p.zotoText{
+			}
+	}
+	.zotoPayViaScreen{
+			text-align: center;
+		p.chooseBank{
+		}
+
+		img{
+			float: none;
+		}
+	}
+}
+}

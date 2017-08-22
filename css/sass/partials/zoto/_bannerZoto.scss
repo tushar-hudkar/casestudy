@@ -1,0 +1,85 @@
+.bannerZoto {
+    @extend %leftfull;
+    @extend %pos-relative;
+    background: #0072c6;
+    height: 600px;
+    .logo {
+        @extend %leftfull;
+        @extend %center;
+        @extend %pos-absolute;
+        top: 50%;
+        @include translateY(-50%);
+
+        img {max-width:100%;}
+
+        p.zotoTagLine{
+            @extend %leftfull;
+            margin-top: 32px;
+            @extend %center;
+            font-size: 1.125rem;
+            font-family: 'ralewaylight';
+            color: $white;
+            line-height: 2rem;
+        }
+    }
+
+    ul.breadcrumb{
+        @extend %leftfull;
+        @include box-sizing(boxsizing);
+        padding: 34px 0 0 34px;
+        @extend %pos-absolute;
+
+        li{
+            @extend %left;
+            list-style: none;
+            font-family: 'brandongrotesque-lightbook';
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 0px 22px;
+
+            &:last-child{
+                border: none;
+            }
+        }
+
+        li.active{
+            color: #ffffff;
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .bannerZoto {
+        height: 500px;
+    .logo {
+
+        img {
+            max-width:100%;
+            width: 98px;
+        }
+
+        p.zotoTagLine{
+            margin-top: 32px;
+            font-size: 1.125rem;
+            line-height: 2rem;
+        }
+    }
+
+    ul.breadcrumb{
+        padding: 34px 0 0 34px;
+        padding: 3%;
+
+        li{
+            font-size: 1rem;
+            padding: 0px 12px;
+
+            &:last-child{
+            }
+        }
+
+        li.active{
+        }
+    }
+}
+}

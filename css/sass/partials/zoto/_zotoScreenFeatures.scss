@@ -1,0 +1,91 @@
+.zotoScreenFeatures{
+	@extend %leftfull;
+	margin-top: 30px;
+
+	.screenState{
+		@extend %left;
+		padding-top: 38px;
+		@include box-sizing(boxsizing);
+
+		img.screenStateLeft{
+			@extend %left;
+			max-width: 100%;
+			width: 300px;
+		}
+		img.screenStateRight{
+			@extend %right;
+			max-width: 100%;
+			width: 300px;
+		}
+	}
+
+	
+	p.stateName1{
+		@extend %left;
+		text-align: left;
+		margin-top: 82px;
+		font-size: 0.9375rem;
+		line-height: 1.625rem;
+		color: rgba(0, 0, 0, 0.5);
+		font-family: 'ralewayregular';
+		font-weight: normal;
+		text-transform: capitalize;
+	
+    	.user{
+			font-size: 1.125rem;
+			color: $black;
+    	}
+	} 
+
+	p.stateName2{
+		@extend %right;
+		text-align: right;
+		margin-top: 292px;
+		font-size: 0.9375rem;
+		line-height: 1.625rem;
+		color: rgba(0, 0, 0, 0.5);
+		font-family: 'ralewayregular';
+		font-weight: normal;
+		text-transform: capitalize;
+		
+    	.user{
+			font-size: 1.125rem;
+			color: $black;
+    	}
+	}
+}
+
+.featureBottomPadding{
+	padding-bottom: 88px;
+}
+
+@media screen and (max-width: 640px){
+	.zotoScreenFeatures{
+		margin-top: 0px;
+	.screenState{
+		text-align: center;
+
+		img.screenStateLeft{
+			float: none;
+			    margin-top: 16px;
+		}
+		img.screenStateRight{
+			float: none;
+			    margin-top: 16px;
+		}
+	}
+
+	
+	p.stateName1{
+		float: none;
+    	text-align: center;
+    	margin: 0;
+	} 
+
+	p.stateName2{
+		float: none;
+    	text-align: center;
+    	margin: 0;
+	}
+}
+}

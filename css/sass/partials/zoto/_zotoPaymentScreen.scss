@@ -1,0 +1,73 @@
+.zotoPaymentScreen{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	margin-top: 30px;
+	
+	@extend %pos-relative;
+
+	.bottomScreen{
+		padding-top: 292px!important;
+	}
+	
+	.introScreen{
+		@extend %left;
+		@extend %center;
+		padding-top: 38px;
+		@include box-sizing(boxsizing);
+
+		p.screenHeading{
+			@extend %leftfull;
+			@include box-sizing(boxsizing);
+			margin-bottom: 18px;
+			font-size: 0.9375rem;
+			line-height: 1.625rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-family: 'ralewayregular';
+		}
+
+		img{
+			max-width: 100%;
+			width: 300px;
+		}
+		img.imgBorder{
+			max-width: 100%;
+			width: 300px;
+			border: 1px solid #f7f7f7;
+		}
+	}
+	
+
+	h2.introScreenHeadingPay{
+		@extend %pos-absolute;
+		top: 142px;
+	    left: 388px;
+	    text-transform: capitalize;
+		font-size: 3rem;
+		line-height: 3.875rem;
+		font-size: 3.625rem;
+	    line-height: 4.875rem;
+		color: rgba(0, 0, 0, 0.5);
+		font-weight: normal;
+		font-family: 'brandongrotesque-thinbook';
+
+		.user{
+			@extend %left;
+			@include box-sizing(boxsizing);
+			padding-right: 42px;
+    		margin-top: 18px;
+			font-size: 0.9375rem;
+			line-height: 1.625rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-family: 'ralewayregular';
+		}
+	}
+}
+
+
+@media screen and (max-width: 640px){
+	
+	.zotoPaymentScreen{
+		display: none;
+	}
+		
+}

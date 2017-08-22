@@ -1,0 +1,87 @@
+.zotoPayVia{
+	@extend %leftfull;
+	margin-top: 30px;
+	@include box-sizing(boxsizing);
+	
+	.introScreenHeadingContainer{
+		@extend %leftfull;
+	h2.introScreenHeading{
+			@extend %right;
+			@include box-sizing(boxsizing);
+			padding-top: 274px;
+    		padding-right: 84px;
+		    text-transform: capitalize;
+			font-size: 3rem;
+			line-height: 3.875rem;
+			font-size: 3.625rem;
+	    	line-height: 4.875rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-weight: normal;
+			font-family: 'brandongrotesque-thinbook';	
+
+			.user{
+			@extend %leftfull;
+			font-size: 0.9375rem;
+			line-height: 1.375rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-family: 'ralewayregular';
+    	}			
+
+		}
+		}
+
+	.zotoPayViaScreen{
+		@extend %left;
+		padding-top: 38px;
+
+		p.chooseBank{
+			@extend %right;
+			width: 100%;
+			@include box-sizing(boxsizing);
+			text-align: right;
+    		padding-right: 46px;
+    		margin-bottom: 18px;
+			font-size: 0.9375rem;
+			line-height: 1.625rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-family: 'ralewayregular';
+		}
+
+		img{
+			@extend %right;
+			max-width: 100%;
+			width: 300px;
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width: 640px){
+	.zotoPayVia{
+		display: none;
+	.introScreenHeadingContainer{
+	h2.introScreenHeading{
+		float: left;
+		padding: 38px 0 0 0;
+
+			.user{
+    	}			
+
+		}
+		}
+
+	.zotoPayViaScreen{
+		text-align: center;
+		p.chooseBank{
+			    padding: 0;
+    text-align: center;
+		}
+
+		img{
+			float: none;
+		}
+	}
+}
+}

@@ -1,0 +1,347 @@
+.zotoProcessing {
+    background-color: $white;
+    height: 350px;
+    @extend %leftfull;
+    @extend %center;
+    @extend %pos-relative;
+    border-bottom: 1px solid #ebebeb;
+    .processingIcon {
+        @extend %leftfull;
+        @extend %pos-absolute;
+        left: 0;
+        top: 50%;
+        @include transform(translateY(-50%));
+
+        img {
+            max-width:100%;
+            @extend %center;
+        }
+
+        p.zotoAction{
+            @extend %leftfull;
+            margin-top: 6px;
+            @extend %center;
+            font-size: 1rem;
+            font-family: 'ralewaylight';
+            color: $black;
+            line-height: 1.75rem;
+        }
+
+    }
+}
+
+
+.zotoProcessingDetails {
+    background-color: $white;
+    height: 700px;
+    @extend %leftfull;
+    @extend %center;
+    @extend %pos-relative;
+    border-bottom: 1px solid #ebebeb;
+    .processingIcon {
+        @extend %leftfull;
+        @extend %center;
+        @extend %pos-absolute;
+        left: 0;
+        top: 50%;
+        @include translateY(-50%);
+
+        img {max-width:100%;}
+
+        p.zotoAction{
+            @extend %leftfull;
+            margin-top: 6px;
+            @extend %center;
+            font-size: 1rem;
+            font-family: 'ralewaylight';
+            color: $black;
+            line-height: 1.75rem;
+        }
+        
+        .zotoRechargeDetails{
+
+            @extend %leftfull;
+            margin: 0 auto;
+
+            .profilePhoto {
+                display: inline-block;
+                margin-top: 42px;
+                height: 42px;
+                width: 42px;
+                background-color: #d0d0d0;
+                @include border-radius(50%);
+                @extend %overflow;   
+
+                img{
+                    max-width: 100%;
+                }      
+        }
+
+        p.profileName{
+            font-size: 0.875rem;
+            margin-top: 6px;
+            line-height: 1.5rem;
+            color: $black;
+            font-family: 'ralewayregular';
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p.operator{
+            font-size: 1rem;
+            margin-top: 4px;
+            line-height: 1.625rem;
+            color: $black;
+            font-family: 'ralewaysemibold';
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p.amount{
+            font-size: 0.8125rem;
+            margin-top: 12px;
+            margin-bottom: 22px;
+            line-height: 1.5rem;
+            color: rgba(0, 0, 0, 0.5);
+            font-family: 'ralewayregular';
+            letter-spacing: 1px;
+
+            .curN{
+                font-size: 1rem;
+                margin-top: 4px;
+                line-height: 1.5rem;
+                color: $black;
+                font-family: 'ralewaysemibold';
+                letter-spacing: 1px;
+            }
+        }
+
+        hr{
+            width: 322px;
+            margin: 0 auto;
+            border-top: 1px solid #ededed;
+        }
+
+        .orderDetails{
+            width: 256px;
+            margin: 0 auto;
+            display: inline-block;
+            border-top: 1px solid #ebebeb;
+            border-bottom: 1px solid #ebebeb;
+
+            p.orderNo{
+                @extend %left;
+                text-align: left;
+                font-size: 0.8125rem;
+                margin-top: 9px;
+                margin-bottom: 9px;
+                line-height: 1.5rem;
+                color: rgba(0, 0, 0, 0.5);
+                font-family: 'ralewayregular';
+                letter-spacing: 1px;
+
+                .number{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    color: $black;
+                    font-family: 'ralewayregular';
+                }
+            }
+
+            p.dateTime{
+                @extend %right;
+                text-align: right;
+                font-size: 0.8125rem;
+                margin-top: 9px;
+                margin-bottom: 9px;
+                line-height: 1.5rem;
+                color: rgba(0, 0, 0, 0.5);
+                font-family: 'ralewayregular';
+                letter-spacing: 1px;
+
+                .DnT{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    color: $black;
+                    font-family: 'ralewayregular';
+                }
+            }
+        }
+
+        p.rechargeSuccessful{
+                font-size: 0.8125rem;
+                margin-top: 28px;
+                line-height: 1.5rem;
+                color: #50d2c2;
+                font-family: 'ralewaymedium';
+                letter-spacing: 1px;
+        }
+
+        p.credited{
+            font-size: 0.8125rem;
+            margin-top: 8px;
+            line-height: 1.5rem;
+            color: $black;
+            font-family: 'ralewaymedium';
+            letter-spacing: 1px;
+        }
+
+        }
+        
+
+    }
+}
+
+
+@media screen and (max-width: 640px){
+    .zotoProcessing {
+    height: 268px;
+    .processingIcon {
+
+        img {
+            max-width:100%;
+        }
+
+        p.zotoAction{
+        }
+
+    }
+}
+
+
+.zotoProcessingDetails {
+    height: 600px;
+    .processingIcon {
+
+        img {max-width:100%;}
+
+        p.zotoAction{
+        }
+        
+        .zotoRechargeDetails{
+
+            .profilePhoto {
+
+                img{
+                    max-width: 100%;
+                }      
+        }
+
+        p.profileName{
+        }
+
+        p.operator{
+        }
+
+        p.amount{
+
+            .curN{
+            }
+        }
+
+        hr{
+        }
+
+        .orderDetails{
+
+            p.orderNo{
+
+                .number{
+                }
+            }
+
+            p.dateTime{
+
+                .DnT{
+                }
+            }
+        }
+
+        p.rechargeSuccessful{
+        }
+
+        p.credited{
+        }
+
+        }
+        
+
+    }
+}
+}
+
+@media screen and (max-width: 480px){
+        .zotoProcessing {
+    height: 218px;
+    .processingIcon {
+
+        img {
+            max-width:100%;
+        }
+
+        p.zotoAction{
+        }
+
+    }
+}
+
+.zotoProcessingDetails {
+    height: 500px;
+    .processingIcon {
+
+        img {max-width:100%;}
+
+        p.zotoAction{
+        }
+        
+        .zotoRechargeDetails{
+
+            .profilePhoto {
+
+                img{
+                    max-width: 100%;
+                }      
+        }
+
+        p.profileName{
+        }
+
+        p.operator{
+        }
+
+        p.amount{
+
+            .curN{
+            }
+        }
+
+        hr{
+        }
+
+        .orderDetails{
+
+            p.orderNo{
+
+                .number{
+                }
+            }
+
+            p.dateTime{
+
+                .DnT{
+                }
+            }
+        }
+
+        p.rechargeSuccessful{
+        }
+
+        p.credited{
+        }
+
+        }
+        
+
+    }
+}
+}
